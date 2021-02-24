@@ -69,5 +69,15 @@ namespace WindowsFormsApp19
         {
             MessageBox.Show("Dziękujemy za kliknięcie przycisku!");
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label2.Text = "Nauka Gita";
+        }
     }
 }

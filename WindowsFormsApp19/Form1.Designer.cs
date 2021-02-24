@@ -39,6 +39,9 @@ namespace WindowsFormsApp19
             this.colorLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.clickButton = new System.Windows.Forms.Button();
+            this.naukaGita = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // redLabel
@@ -121,10 +124,11 @@ namespace WindowsFormsApp19
             this.exitButton.TabIndex = 8;
             this.exitButton.Text = "Zakończ";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // clickButton
             // 
-            this.clickButton.Location = new System.Drawing.Point(116, 333);
+            this.clickButton.Location = new System.Drawing.Point(367, 268);
             this.clickButton.Name = "clickButton";
             this.clickButton.Size = new System.Drawing.Size(75, 23);
             this.clickButton.TabIndex = 9;
@@ -132,11 +136,42 @@ namespace WindowsFormsApp19
             this.clickButton.UseVisualStyleBackColor = true;
             this.clickButton.Click += new System.EventHandler(this.clickButton_Click);
             // 
+            // naukaGita
+            // 
+            this.naukaGita.AutoSize = true;
+            this.naukaGita.Location = new System.Drawing.Point(137, 363);
+            this.naukaGita.Name = "naukaGita";
+            this.naukaGita.Size = new System.Drawing.Size(64, 13);
+            this.naukaGita.TabIndex = 10;
+            this.naukaGita.Text = "Nauka Gita!";
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(249, 362);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 11;
+           
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(223, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.naukaGita);
             this.Controls.Add(this.clickButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.colorLabel);
@@ -151,6 +186,7 @@ namespace WindowsFormsApp19
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -166,6 +202,9 @@ namespace WindowsFormsApp19
         private System.Windows.Forms.Label colorLabel;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button clickButton;
+        private System.Windows.Forms.Label naukaGita;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
