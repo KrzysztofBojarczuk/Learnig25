@@ -37,6 +37,7 @@ namespace WindowsFormsApp19
             this.indigoLabel = new System.Windows.Forms.Label();
             this.violetLabel = new System.Windows.Forms.Label();
             this.colorLabel = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // redLabel
@@ -111,11 +112,21 @@ namespace WindowsFormsApp19
             this.colorLabel.TabIndex = 7;
             this.colorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(560, 322);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 8;
+            this.exitButton.Text = "Zakończ";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.colorLabel);
             this.Controls.Add(this.violetLabel);
             this.Controls.Add(this.indigoLabel);
@@ -141,6 +152,7 @@ namespace WindowsFormsApp19
         private System.Windows.Forms.Label indigoLabel;
         private System.Windows.Forms.Label violetLabel;
         private System.Windows.Forms.Label colorLabel;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
