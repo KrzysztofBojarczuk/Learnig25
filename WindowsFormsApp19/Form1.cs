@@ -64,5 +64,10 @@ namespace WindowsFormsApp19
         {
             DisplayColor(Spectrum.fioletowy);
         }
+
+        private void clickButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Dziękujemy za kliknięcie przycisku!");
+        }
     }
 }
